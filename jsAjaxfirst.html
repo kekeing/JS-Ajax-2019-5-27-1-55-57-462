@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div id="demo">
+<h1>XMLHttpRequest 对象</h1>
+<button type="button" onclick="myCallback()">更改内容</button>
+</div>
+
+<script>
+function myCallback(xhr){ 
+	var xhr = new XMLHttpRequest();
+    alert(xhr.responseText); 
+  }
+  ajax.request(“somefile.txt”,”get”,myCallback);
+  ajax.request(“script.php”,”post”,myCallback,”first=John&last=Smith”);
+
+}
+</script>
+</body>
+</html>
